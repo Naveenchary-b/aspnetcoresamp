@@ -78,6 +78,8 @@ namespace Skillbakery
             app.UseAuthentication();
             app.UseIdentity();
             app.UseMvc(routes => routes.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}"));
+
+
             app.UseFileServer();
             
             //app.Run(async (context) =>
