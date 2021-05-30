@@ -1,0 +1,15 @@
+﻿@inject Skillbakery.Models.FormattingService Format
+@model Skillbakery.Models.Course
+@{
+    Layout = "_Layout";
+}
+
+@section popularCourses{
+    @await Html.PartialAsync("_PopularCourses",Model)
+
+}
+
+<!-- Start feature Area -->
+<section class="feature-area partialView">
+</section>
+<!-- End feature Area -->
